@@ -24,6 +24,20 @@ nav ul li {
   margin: 0 1em;
 }
 
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#products {
+  background-color: #b43030;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
 nav a {
   color: white;
   text-decoration: none;
@@ -61,6 +75,8 @@ main {
   margin-top: 1.5em;
   border-bottom: 2px solid #ccc;
   padding-bottom: 0.5em;
+  font-size: 35px;
+  text-align: center;
 }
 
 .product-list {
@@ -128,52 +144,65 @@ main {
   margin-top: 1em;
 }
 @media (max-width: 768px) {
+   body{
+    margin:0%;
+   }
+  
     header {
-        padding: 0.5em 0;
-    }
-    nav ul {
-        text-align: center;
-    }
-    nav ul li {
-        display: block;
-        margin: 0.5em 0;
-    }
-    .search-bar input[type="text"] {
-        width: 90%;
-        margin-bottom: 0.5em;
-    }
-    .product-list {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
+    padding: 0.5em 0;
+  }
+  nav ul {
+    text-align: center;
+  }
+  nav ul li {
+    display: row;
+    margin: 0.5em 0;
+    padding: 0.5rem;
+    font-size: px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+  .search-bar input[type="text"] {
+    width: 90%;
+    margin-bottom: 0.5em;
+  }
+  .product-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  iframe{
+    width:100%;
+    height:100%;
+  }
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 1.5em;
-    }
-    .product-list {
-        grid-template-columns: 1fr; /* Single column for very small screens */
-    }
-    .product-item {
-        padding: 0.5em;
-    }
-    .product-item h3 {
-        font-size: 1em;
-    }
-    .product-item p {
-        font-size: 0.9em;
-    }
-    .product-item button {
-        font-size: 0.9em;
-        padding: 0.3em 0.7em;
-    }
-    #cart-items {
-        padding: 0.5em;
-    }
-    #cart button {
-        font-size: 0.9em;
-        padding: 0.5em 1em;
-    }
+  h1 {
+    font-size: 1.5em;
+  }
+  .product-list {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+  }
+  .product-item {
+    padding: 0.5em;
+  }
+  .product-item h3 {
+    font-size: 1em;
+  }
+  .product-item p {
+    font-size: 0.9em;
+  }
+  .product-item button {
+    font-size: 0.9em;
+    padding: 0.3em 0.7em;
+  }
+  #cart-items {
+    padding: 0.5em;
+  }
+  #cart button {
+    font-size: 0.9em;
+    padding: 0.5em 1em;
+  }
 }
-
-
